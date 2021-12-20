@@ -199,6 +199,7 @@
     "lodash": "^4.17.21",
     "lower-case": "^2.0.2",
     "lru-cache": "^6.0.0",
+    "luxon": "^2.2.0",
     "media-typer": "^0.3.0",
     "memfs": "^3.4.0",
     "merge-descriptors": "^1.0.1",
