@@ -1,7 +1,43 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f5f4ef;
 }
 
-h1 {
-  color: blue;
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  padding: 2rem;
+}
+
+header ul li {
+  padding: 0 2rem;
+}
+
+#logo img {
+  height: 75px;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+  text-align: center;
 }
