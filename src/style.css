@@ -1,7 +1,68 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f5f4ef;
 }
 
-h1 {
-  color: blue;
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 75px;
+}
+
+header ul {
+  display: flex;
+  padding: 2rem;
+}
+
+header ul li {
+  padding: 0 2rem;
+}
+
+main {
+  position: absolute;
+  top: 83px;
+  bottom: 83px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  gap: 20px;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+main ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+  text-align: center;
 }

@@ -1,7 +1,4 @@
 import './style.css';
-import logo from './images/logo.jpg';
+import displayShows from './displayShows.js';
 
-const logoDiv = document.querySelector('#logo');
-const logoImage = new Image();
-logoImage.src = logo;
-logoDiv.appendChild(logoImage);
+displayShows();
