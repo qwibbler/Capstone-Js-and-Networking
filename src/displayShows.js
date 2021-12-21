@@ -1,7 +1,7 @@
 import getShows from "./getShows.js";
+import makeCard from "./makeCard.js";
 
 const showsWrapper = document.querySelector(".shows-wrapper");
 const allShows = await getShows()
-const egImg = new Image();
-egImg.src = allShows[0].image.medium;
-showsWrapper.appendChild(egImg);
+
+showsWrapper.appendChild(showCard);
