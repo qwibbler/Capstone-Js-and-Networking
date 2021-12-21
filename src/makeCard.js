@@ -8,7 +8,7 @@ const makeCard = (show) => {
   `;
 
   showCard.querySelector('.comment').addEventListener('click', () => {
-    popup.classList.remove('invisible')
+    popup.classList.add('invisible')
     popup.innerHTML = `
     <div class="popupContent">
       <div class="title-close">
@@ -26,10 +26,8 @@ const makeCard = (show) => {
    `;
     const closePopup = document.querySelector('.closePopup');
     closePopup.addEventListener('click', () => {
-      console.log('click', popup.classList);
-      popup.classList.add('invisible')
-      console.log(popup.classList);
-    })
+      popup.classList.remove('invisible')
+    });
   });
   return showCard;
 };

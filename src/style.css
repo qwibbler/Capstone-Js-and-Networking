@@ -67,9 +67,9 @@ footer {
   text-align: center;
 }
 
-.create Popup {
+.createPopup {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.3); 
+  background-color: rgba(0, 0, 0, 0.8); 
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -84,7 +84,7 @@ footer {
   transition: transform .9s;
 }
 
-.showPopup {
+.invisible {
   pointer-events: auto;
   opacity: 1;
   transform: translateY(0%);
