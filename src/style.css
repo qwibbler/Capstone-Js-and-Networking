@@ -34,9 +34,9 @@ header ul li {
 }
 
 main {
-  position: fixed;
-  top: 86.4px;
-  bottom: 53px;
+  position: absolute;
+  top: 83px;
+  bottom: 83px;
   left: 0;
   right: 0;
   overflow-y: auto;
