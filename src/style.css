@@ -6,12 +6,13 @@
 
 header {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   align-items: center;
   justify-content: space-between;
   background-color: #f5f4ef;
+  border-bottom: 4px ridge #555;
 }
 
 #title {
@@ -33,9 +34,9 @@ header ul li {
 }
 
 main {
-  position: absolute;
-  top: 83px;
-  bottom: 50.4px;
+  position: fixed;
+  top: 86.4px;
+  bottom: 53px;
   left: 0;
   right: 0;
   overflow-y: auto;
@@ -74,9 +75,9 @@ main ul li img {
   padding: 0.1rem;
   height: 2rem;
   border: none;
-  font-family: "Font Awesome 5 Brands";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
-  font-weight:bold
+  font-weight: bold;
 }
 
 h3 {
@@ -87,16 +88,16 @@ h3 {
   height: 2rem;
   width: 50%;
   align-self: flex-end;
-  border-color: #CCC;
-  background-color: #CCC;
+  border-color: #ccc;
+  background-color: #ccc;
   color: #494949;
   position: relative;
   padding: 0.3rem;
   margin: 0.3rem auto;
   border-radius: 0.5rem;
   box-shadow:
-  inset 1px 1px 0px rgba(255, 255, 255, 0.2),
-  inset -1px -1px 0px rgba(0, 0, 0, 0.6)
+    inset 1px 1px 0 rgba(255, 255, 255, 0.2),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.6);
 }
 
 .check {
@@ -121,4 +122,5 @@ footer {
   padding: 1rem 0;
   text-align: center;
   background-color: #f5f4ef;
+  border-top: 3px ridge #555;
 }

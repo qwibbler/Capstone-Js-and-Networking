@@ -3,7 +3,7 @@ import makeCard from './makeCard.js';
 import getLikes from './getLikes.js';
 
 const mapLikes = async (pg = 0) => {
-  const allShows = await getShows(pg = 0);
+  const allShows = await getShows(pg);
   const allLikes = await getLikes();
   allShows.map((show) => {
     const item = allLikes.find((item) => item.item_id === show.id);
@@ -14,7 +14,7 @@ const mapLikes = async (pg = 0) => {
 };
 
 const displayShows = async (pg = 0) => {
-  const showsLikes = await mapLikes();
+  const showsLikes = await mapLikes(pg);
   const showsWrapper = document.querySelector('.shows-wrapper');
   showsLikes.forEach((show) => {
     const card = makeCard(show);
