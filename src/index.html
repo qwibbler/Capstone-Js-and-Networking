@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TV Shows Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
@@ -13,11 +15,16 @@
       <img id="logo" src="./images/logo.jpg" alt="logo">
       <h1>TV Shows Catalogue</h1>
     </div>
-    <ul>
-      <li>Drama</li>
-      <li>Horror</li>
-      <li>Cartoons</li>
-    </ul>
+    <div id="select-genre">
+      <label for="genre">Select by Genre</label>
+      <select id="genre" name="genre" disabled>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="cartoons">Cartoons</option>
+        <option value="comedy">Comedy</option>
+        <option value="romance">Romance</option>
+      </select>
+    </div>
   </header>
 
   <main>

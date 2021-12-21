@@ -16,9 +16,11 @@ const mapLikes = async (pg = 0) => {
 const displayShows = async (pg = 0) => {
   const showsLikes = await mapLikes(pg);
   const showsWrapper = document.querySelector('.shows-wrapper');
+  const frag = document.createDocumentFragment();
   showsLikes.forEach((show) => {
     const card = makeCard(show);
-    showsWrapper.appendChild(card);
+    frag.appendChild(card);
   });
+  showsWrapper.appendChild(frag);
 };
 export default displayShows;
