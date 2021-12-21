@@ -18,7 +18,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "",
+    publicPath: '',
     clean: true,
   },
   module: {
@@ -32,10 +32,10 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test:/\.html$/,
+        test: /\.html$/,
         use: [
-          'html-loader'
-        ]
+          'html-loader',
+        ],
       },
     ],
   },
