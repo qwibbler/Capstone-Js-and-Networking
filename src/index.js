@@ -1,9 +1,8 @@
 import getShows from "./getShows.js";
+import './style.css';
+import logo from './images/logo.jpg';
+// const logo = './images/logo.jpg';
 const showsWrapper = document.querySelector(".shows-wrapper");
-
-// import './style.css';
-// import logo from './images/logo.jpg';
-const logo = './images/logo.jpg';
 
 const logoDiv = document.querySelector('#logo');
 const logoImage = new Image();
