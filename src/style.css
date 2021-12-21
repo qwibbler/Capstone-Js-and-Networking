@@ -33,8 +33,8 @@ header {
 main {
   position: absolute;
   top: 4.5rem;
-  padding: 0.5rem 0 3rem 0;
-  bottom: 0;
+  padding: 0.5rem;
+  bottom: 52.8px;
   left: 0;
   right: 0;
   overflow-y: auto;
@@ -118,12 +118,11 @@ h3 {
 }
 
 footer {
-  width: 440px;
+  width: 100vw;
   position: fixed;
   bottom: 0;
-  left: 50%;
-  margin-left: -220px;
-  padding: 1rem;
+  margin: 0 auto;
+  padding: 1rem 0;
   text-align: center;
   background-color: #f5f4ef;
   border-top: 3px ridge #555;
