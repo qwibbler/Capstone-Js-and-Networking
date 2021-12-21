@@ -43,7 +43,9 @@ main {
 
 main ul {
   display: grid;
-  grid-template-columns: repeat(autofit);
+  grid-template-columns: repeat(auto-fit, 220px);
+  gap: 20px;
+  margin: auto;
   padding: 2.5rem;
 }
 
