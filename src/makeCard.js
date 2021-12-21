@@ -4,9 +4,11 @@ const makeCard = (show) => {
     <img src="${show.image.medium}">
     <div class="title">
       <h3>${show.name}</h3>
-      <input class="likes check" type="checkbox" name="likes" id="likes">
-      <label class="likes label" for="likes">&#9825</label>
-      <input class="likes number" type="text" value="78" disabled>
+      <div class="likes likes-div">
+        <input class="likes check" type="checkbox" name="likes" id="likes">
+        <label class="likes label" for="likes">&#9825</label>
+        <input class="likes number" type="text" value="${show.likes}" disabled>
+      </div>
     </div>
     <input class="comment button" type="button" value="Comment">
   `;
