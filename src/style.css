@@ -19,6 +19,10 @@ header {
   align-items: center;
 }
 
+#logo {
+  height: 75px;
+}
+
 header ul {
   display: flex;
   padding: 2rem;
@@ -28,8 +32,27 @@ header ul li {
   padding: 0 2rem;
 }
 
-#logo img {
-  height: 75px;
+main {
+  position: absolute;
+  top: 83px;
+  bottom: 83px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(autofit);
+  padding: 2.5rem;
+}
+
+main ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 footer {
