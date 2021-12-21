@@ -1,4 +1,4 @@
 // import './style.css';
-import displayShows from "./displayShows.js";
+import displayShows from './displayShows.js';
 
-displayShows()
+displayShows();
