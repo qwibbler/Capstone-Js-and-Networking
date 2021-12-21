@@ -1,12 +1,9 @@
-const tvMazeUrl = 'https://api.tvmaze.com/';
-
-const getShows = async () => {
-  const response = await fetch(`${tvMazeUrl}shows}`, {
+const getShows = async (pg = 1) => {
+  const response = await fetch(`https://api.tvmaze.com/shows?page=${pg}`, {
     method: 'GET',
   })
-  const json = JSON.parse(response);
-  console.log(json);
+  const json = await response.json();
+  console.log(response, json);
   return json;
 }
-
 export default getShows;
