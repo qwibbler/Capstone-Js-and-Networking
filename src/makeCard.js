@@ -1,8 +1,8 @@
-const makeCard = (allShows = [], showID = 0) => {
+const makeCard = (show) => {
   const showCard = document.createElement('li')
   showCard.innerHTML = `
-    <img src="${allShows[showID].image.medium}">
-    ${allShows[showID].name}
+    <img src="${show.image.medium}">
+    ${show.name}
     <input type="button" value="Comment">
   `
   return showCard;
