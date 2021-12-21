@@ -1,6 +1,7 @@
 const makeCard = (show) => {
   const showCard = document.createElement('li');
   const popup = document.querySelector('.createPopup');
+  
 
   showCard.innerHTML = `
     <img src="${show.image.medium}">
@@ -12,7 +13,7 @@ const makeCard = (show) => {
   
   showCard.querySelector('.comment').addEventListener('click',  () => {
     
-    popup.classList.add('showPopup')
+    popup.classList.add('.showPopup')
     popup.innerHTML = `
     <div class="popupContent">
       <div class="title-close">
@@ -28,10 +29,21 @@ const makeCard = (show) => {
       </div>  
     </div>  
    `;
-  })
+  });
+
+  
+
+  
   return showCard;
 
 };
+
+const closePopup = document.querySelector('.closePopup');
+
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('.showPopup')
+})
+
 
 
 export default makeCard;

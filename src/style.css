@@ -67,7 +67,7 @@ footer {
   text-align: center;
 }
 
-.popupwindow {
+.create Popup {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3); 
   align-items: center;
@@ -138,6 +138,6 @@ textarea {
 .closePopup {
   width: 40px;
   height: 3vh;
-  border: none;
+  border: 1px solid;
   font-size: 20px
 }
