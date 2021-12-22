@@ -16,7 +16,7 @@ describe('Check Count of Shows Shown', () => {
   const list = document.querySelector('ul');
 
   test('If not equal', () => {
-    expect(countShows(array, list)).toStrictEqual([4, 0, false]);
+    expect(countShows(array, list)).tobe([4, 0, false]);
   })
   
   test('If equal', () => {
