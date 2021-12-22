@@ -44,10 +44,8 @@ main {
 
 main ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 210px);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 220px);
   margin: auto;
-  padding: 2.5rem;
 }
 
 main ul li {
@@ -123,4 +121,94 @@ footer {
   text-align: center;
   background-color: #f5f4ef;
   border-top: 3px ridge #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.createPopup {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8); 
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  position: fixed;
+  transform: translateY(100%);
+  transition: transform .9s;
+}
+
+.invisible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.popupContent {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.title-close {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showTitle {
+  width: 100%;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+textarea {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 10vh;
+}
+
+.submitOpinion {
+  width: 100px;
+  height: 4vh;
+}
+
+.closePopup {
+  width: 40px;
+  height: 3vh;
+  border: 1px solid;
+  font-size: 20px
 }
