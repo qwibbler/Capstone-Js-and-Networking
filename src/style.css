@@ -40,6 +40,19 @@ main {
   overflow-y: auto;
 }
 
+.navigation {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navigation input {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 2rem;
+  appearance: textfield;
+  border: none;
+}
+
 main ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, 210px);
