@@ -1,4 +1,5 @@
 import clickLike from './clickLike.js';
+import { addComment, getComments } from './comments.js';
 
 const cardInner = (show) => {
   const html = `
@@ -25,14 +26,28 @@ const popupInner = (show) => {
       </div>
       <img src="${show.image.medium}">
       <p>${show.summary}</p>
+
       <div class="form">
         <input type="text" id="name" placeholder="Your name">
-        <textarea id="comments" placeholder="Type your opinion here..."></textarea>
+        <textarea id="opinion" placeholder="Type your opinion here..."></textarea>
         <button class="submitOpinion" type="submit">Submit</button>
       </div>
+      <div class="comments"></div>
     </div>
   `;
   return html;
+};
+
+const paintComments = (popup, show) => {
+  getComments(show.id).then((comments) => {
+    popup.querySelector('.comments').innerHTML = `
+      ${comments.map((comment) => `
+          <h1>${comment.username}</h1>
+          <p>${comment.comment}</p>
+          <p><i>${comment.creation_date}</i></p>
+      `).join(' ')}
+    `;
+  });
 };
 
 const makeCard = (show) => {
@@ -46,9 +61,21 @@ const makeCard = (show) => {
     popup.innerHTML = popupInner(show);
 
     const closePopup = document.querySelector('.closePopup');
+    const submitOpinion = document.querySelector('.submitOpinion');
+
+    submitOpinion.addEventListener('click', (e) => {
+      e.preventDefault();
+      const user = document.querySelector('.form #name').value;
+      const comment = document.querySelector('.form #opinion').value;
+      const itemID = show.id;
+      addComment({ user, itemID, comment }).then(() => {
+        paintComments(popup, show);
+      });
+    });
     closePopup.addEventListener('click', () => {
       popup.classList.remove('invisible');
     });
+    paintComments(popup, show);
   });
 
   const heart = showCard.querySelector('.label');
