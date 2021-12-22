@@ -1,4 +1,5 @@
-const appId = 'exGrmnNXlgE2dfxvkk5S';
+import appId from './app-id.js';
+
 const postLikes = async (show) => {
   const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes`, {
     method: 'POST',
