@@ -1,6 +1,7 @@
-const makeCard = (show) => {
-  const showCard = document.createElement('li');
-  showCard.innerHTML = `
+import clickLike from './clickLike.js';
+
+const cardInner = (show) => {
+  const html = `
     <img src="${show.image.medium}">
     <div class="title">
       <h3>${show.name}</h3>
@@ -11,17 +12,12 @@ const makeCard = (show) => {
       </div>
     </div>
     <input class="comment button" type="button" value="Comment">
-  `;
-  const popup = document.querySelector('.createPopup');
-  showCard.innerHTML = `
-    <img src="${show.image.medium}">
-    ${show.name}
-    <input type="button" value="Comment" class="comment"> 
-  `;
+  `
+  return html
+}
 
-  showCard.querySelector('.comment').addEventListener('click', () => {
-    popup.classList.add('invisible');
-    popup.innerHTML = `
+const popupInner = (show) => {
+  const html = `
     <div class="popupContent">
       <div class="title-close">
         <h1 class="showTitle">${show.name}</h1>
@@ -35,13 +31,32 @@ const makeCard = (show) => {
         <button class="submitOpinion" type="submit">Submit</button>
       </div>
     </div>
-   `;
+  `
+  return html;
+}
+
+const makeCard = (show) => {
+  const showCard = document.createElement('li');
+  const popup = document.querySelector('.createPopup');
+
+  showCard.innerHTML = cardInner(show);
+
+  showCard.querySelector('.comment').addEventListener('click', () => {
+    popup.classList.add('invisible');
+    popup.innerHTML = popupInner(show);
+
     const closePopup = document.querySelector('.closePopup');
     closePopup.addEventListener('click', () => {
       popup.classList.remove('invisible');
     });
   });
+
+  const heart = showCard.querySelector('.label')
+  const check = showCard.querySelector('.check')
+  check.addEventListener('change', () => {
+    clickLike(show, heart);
+  })
+
   return showCard;
 };
-
 export default makeCard;
