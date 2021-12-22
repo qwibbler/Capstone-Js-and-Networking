@@ -13,12 +13,18 @@
       <img id="logo" src="./images/logo.jpg" alt="logo">
       <h1>TV Shows Catalogue</h1>
     </div>
-    <ul>
-      <li>Drama</li>
-      <li>Horror</li>
-      <li>Cartoons</li>
-    </ul>
+    <div id="select-genre">
+      <label for="genre">Select by Genre:</label>
+      <select id="genre" name="genre" disabled>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="cartoons">Cartoons</option>
+        <option value="comedy">Comedy</option>
+        <option value="romance">Romance</option>
+      </select>
+    </div>
   </header>
+
   <main>
     <ul class="shows-wrapper"></ul>
     <div class="createPopup showPopup"></div>
@@ -28,5 +34,4 @@
     <p>Created by Ivan and Zaman with Microverse under CC License</p>
   </footer>
 </body>
-
 </html>
