@@ -1,5 +1,5 @@
-import appId from "./app-id.js"
-import baseUrl from "./baseUrl.js";
+import appId from './app-id.js';
+import baseUrl from './baseUrl.js';
 // const appId = 'aCvUcU44XeA6m6Pc5YC4'
 
 const getLikes = async () => {
