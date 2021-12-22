@@ -1,7 +1,6 @@
 import makeCard from './makeCard.js';
 import mapLikes from './mapLikes.js';
 
-
 const displayShows = async () => {
   const showsLikes = await mapLikes();
   const showsWrapper = document.querySelector('.shows-wrapper');
@@ -11,6 +10,6 @@ const displayShows = async () => {
     frag.appendChild(card);
   });
   showsWrapper.appendChild(frag);
-  return showsLikes
+  return showsLikes;
 };
 export default displayShows;

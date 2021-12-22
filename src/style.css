@@ -202,7 +202,9 @@ footer {
   background-color: #f5f4ef;
   border-top: 3px ridge #555;
   border-radius: 50px 50px 0 0;
+
   /* display: flex; */
+
   /* flex-direction: column; */
   align-items: center;
   font-size: 1.5rem;

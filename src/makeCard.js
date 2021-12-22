@@ -12,9 +12,9 @@ const cardInner = (show) => {
       </div>
     </div>
     <input class="comment button" type="button" value="Comment">
-  `
-  return html
-}
+  `;
+  return html;
+};
 
 const popupInner = (show) => {
   const html = `
@@ -31,9 +31,9 @@ const popupInner = (show) => {
         <button class="submitOpinion" type="submit">Submit</button>
       </div>
     </div>
-  `
+  `;
   return html;
-}
+};
 
 const makeCard = (show) => {
   const showCard = document.createElement('li');
@@ -51,11 +51,11 @@ const makeCard = (show) => {
     });
   });
 
-  const heart = showCard.querySelector('.label')
-  const check = showCard.querySelector('.check')
+  const heart = showCard.querySelector('.label');
+  const check = showCard.querySelector('.check');
   check.addEventListener('change', () => {
     clickLike(show, heart);
-  })
+  });
 
   return showCard;
 };
