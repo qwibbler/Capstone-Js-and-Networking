@@ -37,11 +37,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-1. Click on a show's picture to see more information.
 1. Click on the heart to *Like* your favorite shows.
-2. Click on the comment button to share your views on any show.
+2. Click on the comment button to see more information about the show and share your views.
 
 ### Run tests
+
+1. Run the command `npm test`
 
 
 

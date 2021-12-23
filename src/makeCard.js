@@ -41,7 +41,7 @@ const paintComments = (popup, show) => {
   getComments(show.id).then((comments) => {
     popup.querySelector('.comments').innerHTML = `
       ${comments.map((comment) => `
-          <h1>${comment.username}</h1>
+          <h3>${comment.username}</h3>
           <p>${comment.comment}</p>
           <p><i>${comment.creation_date}</i></p>
       `).join(' ')}
