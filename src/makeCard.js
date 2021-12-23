@@ -1,5 +1,6 @@
 import clickLike from './clickLike.js';
 import { addComment, getComments } from './comments.js';
+import countComments from './counter-comments.js';
 
 const cardInner = (show) => {
   const html = `
@@ -22,16 +23,17 @@ const popupInner = (show) => {
     <div class="popupContent">
       <div class="title-close">
         <h1 class="showTitle">${show.name}</h1>
-        <input type="button" class="closePopup button" value="X">
+        <button type="button" class="closePopup">X</button>
       </div>
-      <img id="big-pic" src="${show.image.original}">
-      <div class="summary">${show.summary}</div>
-      <div class="comments"></div>
+      <img src="${show.image.medium}">
+      <p>${show.summary}</p>
+      <div class="comments" id='comments'></div>
       <div class="form">
-        <input type="text" id="name" placeholder="Your name" required>
-        <textarea id="opinion" placeholder="Type your opinion here..." required></textarea>
-        <input class="submitOpinion button" type="submit" value="Submit">
+        <input type="text" id="name" placeholder="Your name">
+        <textarea id="opinion" placeholder="Type your opinion here..."></textarea>
+        <button class="submitOpinion" type="submit">Submit</button>
       </div>
+      
     </div>
   `;
   return html;
@@ -40,8 +42,9 @@ const popupInner = (show) => {
 const paintComments = (popup, show) => {
   getComments(show.id).then((comments) => {
     popup.querySelector('.comments').innerHTML = `
+    <h3> Total comments: ${countComments(comments)} </h3> 
       ${comments.map((comment) => `
-          <h3>${comment.username}</h3>
+          <h1>${comment.username}</h1>
           <p>${comment.comment}</p>
           <p><i>${comment.creation_date}</i></p>
       `).join(' ')}
