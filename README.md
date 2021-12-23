@@ -54,11 +54,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@hmemaz](https://twitter.com/hmemaz)
 - LinkedIn: [Humaira Zaman](https://www.linkedin.com/in/hmemaz1994/)
 
-👤 **Ivan**
+👤 **Ivan Gaona**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ivaan1992](https://github.com/ivaan1992)
+- Twitter: [@ivangaona92](https://twitter.com/ivangaona92)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ivan-linares-gaona/)
 
 ## 🤝 Contributing
 

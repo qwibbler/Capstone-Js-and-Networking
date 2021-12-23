@@ -193,14 +193,20 @@ h3 {
 #name {
   font-size: 1rem;
   padding: 0.2rem;
-  width: 150px;
+  width: 250px;
   margin-bottom: 20px;
+  border: 1px solid black;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: .9rem;
 }
 
 textarea {
   margin-bottom: 20px;
-  height: 10vh;
-  font-size: 1rem;
+  height: 15vh;
+  font-size: .9rem;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 input:disabled {
@@ -214,13 +220,25 @@ input:hover {
 
 .submitOpinion {
   width: 100px;
+  height: 4vh;
   font-size: 1rem;
   margin: 0 auto 10px auto;
+  background-color: #2980B9;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: bold;
 }
 
 .closePopup {
-  width: 40px;
+  width: 60px;
+  height: 4vh;
   font-size: 20px;
+  background-color: #e00000;
+  border: 1px solid;
+  color: #fff;
+  font-weight: bold;
 }
 
 footer {
