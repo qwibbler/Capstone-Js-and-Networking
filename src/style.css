@@ -235,6 +235,8 @@ input:hover {
   height: 4vh;
   font-size: 20px;
   background-color: #e00000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
   border: 1px solid;
   color: #fff;
   font-weight: bold;
