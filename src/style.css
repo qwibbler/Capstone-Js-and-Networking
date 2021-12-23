@@ -33,11 +33,24 @@ header {
 main {
   position: absolute;
   top: 4.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   bottom: 52.8px;
   left: 0;
   right: 0;
   overflow-y: auto;
+}
+
+.navigation {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navigation input {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 2rem;
+  appearance: textfield;
+  border: none;
 }
 
 main ul {
@@ -88,7 +101,7 @@ h3 {
   clear: both;
 }
 
-.comment {
+.button {
   height: 2rem;
   width: 50%;
   align-self: flex-end;
@@ -127,8 +140,8 @@ h3 {
   pointer-events: none;
   top: 0;
   left: 0;
+  right: 0;
   height: 100vh;
-  width: 100vw;
   opacity: 0;
   transform: translateY(100%);
   transition: transform 0.9s;
@@ -141,19 +154,24 @@ h3 {
 }
 
 .popupContent {
-  background-color: #fff;
+  display: grid;
+  gap: 0.5rem;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
   width: 600px;
-  max-width: 100%;
+  max-width: 75vw;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 30px 50px;
   border-radius: 5px;
   text-align: center;
+  background-color: #fff;
 }
 
 .title-close {
   width: 100%;
-  height: 10vh;
   display: flex;
-  margin-bottom: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -163,32 +181,45 @@ h3 {
   align-items: center;
 }
 
+#big-pic {
+  width: 100%;
+}
+
 .form {
   display: flex;
   flex-direction: column;
 }
 
-input {
+#name {
+  font-size: 1rem;
+  padding: 0.2rem;
   width: 150px;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 textarea {
   margin-bottom: 20px;
-  width: 200px;
   height: 10vh;
+  font-size: 1rem;
+}
+
+input:disabled {
+  background-color: #fff;
+}
+
+textarea,
+input:hover {
+  cursor: pointer;
 }
 
 .submitOpinion {
   width: 100px;
-  height: 4vh;
+  font-size: 1rem;
+  margin: 0 auto 10px auto;
 }
 
 .closePopup {
   width: 40px;
-  height: 3vh;
-  border: 1px solid;
   font-size: 20px;
 }
 
@@ -202,11 +233,19 @@ footer {
   background-color: #f5f4ef;
   border-top: 3px ridge #555;
   border-radius: 50px 50px 0 0;
-
-  /* display: flex; */
-
-  /* flex-direction: column; */
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  main {
+    top: 79px;
+    bottom: 24px;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+  }
 }

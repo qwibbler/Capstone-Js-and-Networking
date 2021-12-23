@@ -22,17 +22,16 @@ const popupInner = (show) => {
     <div class="popupContent">
       <div class="title-close">
         <h1 class="showTitle">${show.name}</h1>
-        <button type="button" class="closePopup">X</button>
+        <input type="button" class="closePopup button" value="X">
       </div>
-      <img src="${show.image.medium}">
-      <p>${show.summary}</p>
-
-      <div class="form">
-        <input type="text" id="name" placeholder="Your name">
-        <textarea id="opinion" placeholder="Type your opinion here..."></textarea>
-        <button class="submitOpinion" type="submit">Submit</button>
-      </div>
+      <img id="big-pic" src="${show.image.original}">
+      <div class="summary">${show.summary}</div>
       <div class="comments"></div>
+      <div class="form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <textarea id="opinion" placeholder="Type your opinion here..." required></textarea>
+        <input class="submitOpinion button" type="submit" value="Submit">
+      </div>
     </div>
   `;
   return html;
@@ -42,7 +41,7 @@ const paintComments = (popup, show) => {
   getComments(show.id).then((comments) => {
     popup.querySelector('.comments').innerHTML = `
       ${comments.map((comment) => `
-          <h1>${comment.username}</h1>
+          <h3>${comment.username}</h3>
           <p>${comment.comment}</p>
           <p><i>${comment.creation_date}</i></p>
       `).join(' ')}
