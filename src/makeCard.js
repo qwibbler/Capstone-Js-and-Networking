@@ -22,17 +22,16 @@ const popupInner = (show) => {
     <div class="popupContent">
       <div class="title-close">
         <h1 class="showTitle">${show.name}</h1>
-        <button type="button" class="closePopup">X</button>
+        <input type="button" class="closePopup button" value="X">
       </div>
-      <img src="${show.image.medium}">
-      <p>${show.summary}</p>
-
+      <img src="${show.image.original}">
+      <div class="summary">${show.summary}</div>
+      <div class="comments"></div>
       <div class="form">
         <input type="text" id="name" placeholder="Your name">
         <textarea id="opinion" placeholder="Type your opinion here..."></textarea>
-        <button class="submitOpinion" type="submit">Submit</button>
+        <input class="submitOpinion button" type="submit" value="Submit">
       </div>
-      <div class="comments"></div>
     </div>
   `;
   return html;
