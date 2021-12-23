@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
   <header>
     <div id="title">
       <img id="logo" src="cdbde9dc8e13ff952193.jpg" alt="logo">
-      <h1>TV Shows Catalogue</h1>
+      <h1>TV&nbsp;Shows Catalogue</h1>
     </div>
     <div id="select-genre">
       <label for="genre">Select by Genre:</label>
@@ -26,9 +27,15 @@
   </header>
 
   <main>
+    <div class="navigation">
+      <a id="prev" href="#">&#8668;</a>
+      <label for="pg-no">Page</label>
+      <input type="number" name="page" id="pg-no" value="1" disabled>
+      <label id="count" for="pg-no"></label>
+      <a id="prev" href="@">&#8669;</a>
+    </div>
     <ul class="shows-wrapper"></ul>
     <div class="createPopup showPopup">
-      <ul class="users-comments"></ul>
     </div>
   </main>
 
@@ -36,4 +43,5 @@
     <p>Created by Ivan and Zaman with Microverse under CC License</p>
   </footer>
 </body>
+
 </html>
