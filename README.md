@@ -4,7 +4,7 @@
 
 > This website shows a catalogue of all available TV shows, with the option to like your favorite shows or share your comments about them.
 
-![screenshot](./src/images/screenshot.png)
+![screenshot](./src/images/Screenshot.png)
 
 Additional description about the project and its features.
 
