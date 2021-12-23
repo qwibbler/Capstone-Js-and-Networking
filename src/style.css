@@ -191,20 +191,19 @@ h3 {
 }
 
 #name {
-  font-size: 1rem;
   padding: 0.2rem;
   width: 250px;
   margin-bottom: 20px;
   border: 1px solid black;
   height: 3vh;
   border-radius: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 textarea {
   margin-bottom: 20px;
   height: 15vh;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-radius: 5px;
   border: 1px solid black;
 }
@@ -223,7 +222,7 @@ input:hover {
   height: 4vh;
   font-size: 1rem;
   margin: 0 auto 10px auto;
-  background-color: #2980B9;
+  background-color: #2980b9;
   border: 1px solid;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
