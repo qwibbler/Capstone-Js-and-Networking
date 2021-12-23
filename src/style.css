@@ -101,7 +101,7 @@ h3 {
   clear: both;
 }
 
-.comment {
+.button {
   height: 2rem;
   width: 50%;
   align-self: flex-end;
@@ -203,6 +203,11 @@ textarea {
   font-size: 1rem;
 }
 
+input,
+input:disabled {
+  background-color: #fff;
+}
+
 textarea,
 input:hover {
   cursor: pointer;
@@ -211,7 +216,7 @@ input:hover {
 .submitOpinion {
   width: 100px;
   font-size: 1rem;
-  margin: auto;
+  margin: 0 auto 10px auto;
 }
 
 .closePopup {
