@@ -25,7 +25,7 @@ const popupInner = (show) => {
         <h1 class="showTitle">${show.name}</h1>
         <button type="button" class="closePopup">X</button>
       </div>
-      <img src="${show.image.medium}">
+      <img id="big-pic" src="${show.image.original}">
       <p>${show.summary}</p>
       <div class="comments" id='comments'></div>
       <div class="form">
@@ -44,7 +44,7 @@ const paintComments = (popup, show) => {
     popup.querySelector('.comments').innerHTML = `
     <h3> Total comments: ${countComments(comments)} </h3> 
       ${comments.map((comment) => `
-          <h1>${comment.username}</h1>
+          <h4>${comment.username}</h4>
           <p>${comment.comment}</p>
           <p><i>${comment.creation_date}</i></p>
       `).join(' ')}
