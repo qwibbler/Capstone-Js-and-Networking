@@ -28,8 +28,8 @@ const popupInner = (show) => {
       <div class="summary">${show.summary}</div>
       <div class="comments"></div>
       <div class="form">
-        <input type="text" id="name" placeholder="Your name">
-        <textarea id="opinion" placeholder="Type your opinion here..."></textarea>
+        <input type="text" id="name" placeholder="Your name" required>
+        <textarea id="opinion" placeholder="Type your opinion here..." required></textarea>
         <input class="submitOpinion button" type="submit" value="Submit">
       </div>
     </div>
