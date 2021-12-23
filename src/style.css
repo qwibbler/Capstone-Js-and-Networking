@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -23,11 +24,6 @@ header {
 
 #logo {
   height: 75px;
-}
-
-#select-genre * {
-  padding: 0.2rem;
-  margin: 0.1rem 0.5rem;
 }
 
 main {
