@@ -24,7 +24,7 @@ const popupInner = (show) => {
         <h1 class="showTitle">${show.name}</h1>
         <input type="button" class="closePopup button" value="X">
       </div>
-      <img src="${show.image.original}">
+      <img id="big-pic" src="${show.image.original}">
       <div class="summary">${show.summary}</div>
       <div class="comments"></div>
       <div class="form">
