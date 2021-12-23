@@ -203,7 +203,6 @@ textarea {
   font-size: 1rem;
 }
 
-input,
 input:disabled {
   background-color: #fff;
 }
