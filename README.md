@@ -20,7 +20,7 @@ Additional description about the project and its features.
 
 [Live Demo Link](https://qwibbler.github.io/Capstone-Js-and-Networking/)
 
-[Live Video Link](https://drive.google.com/file/d/1YUuIAVCwr5MvCYjSXA4e1ADtogvvTnsJ/view?usp=sharing)
+
 
 
 
