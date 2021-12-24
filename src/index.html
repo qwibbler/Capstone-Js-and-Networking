@@ -1,19 +1,42 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Movie Catalogue</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Shows Catalogue</title>
+  <link rel="shortcut icon" href="./images/tv-icon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-
+    <div id="title">
+      <img id="logo" src="./images/logo.jpg" alt="logo">
+      <h1>TV&nbsp;Shows Catalogue</h1>
+    </div>
   </header>
 
+  <main>
+    <div class="navigation">
+      <a id="prev" href="#">&#8668;</a>
+      <label for="pg-no">Page</label>
+      <input type="number" name="page" id="pg-no" value="1" disabled>
+      <label id="count" for="pg-no"></label>
+      <a id="next" href="#">&#8669;</a>
+    </div>
+    <ul class="shows-wrapper"></ul>
+    <div class="createPopup showPopup">
+    </div>
+  </main>
+
   <footer>
-    
+    <p>Created by <a href="https://github.com/ivaan1992">Ivan</a>
+      and <a href="https://github.com/qwibbler">Zaman</a> 
+      with Microverse under CC License</p>
   </footer>
 </body>
 

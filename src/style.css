@@ -1,7 +1,271 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
 }
 
-h1 {
+header {
+  display: flex;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f4ef;
+  border-bottom: 4px ridge #555;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 75px;
+}
+
+main {
+  position: absolute;
+  top: 4.5rem;
+  padding: 0.5rem 0;
+  bottom: 52.8px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+.navigation {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navigation input {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 2rem;
+  appearance: textfield;
+  border: none;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 210px);
+  gap: 20px;
+  margin: auto;
+  padding: 2.5rem;
+  justify-content: center;
+}
+
+main ul li {
+  display: grid;
+  grid-template-rows: 295px auto 2.6rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main ul li img {
+  width: 210px;
+  height: 295px;
+  transition: all 0.5s;
+}
+
+li img:hover {
+  transform: scale(1.02);
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+  height: 2rem;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  clear: both;
+}
+
+.button {
+  height: 2rem;
+  width: 50%;
+  align-self: flex-end;
+  border-color: #ccc;
+  background-color: #ccc;
+  color: #494949;
+  position: relative;
+  padding: 0.3rem;
+  margin: 0.3rem auto;
+  border-radius: 0.5rem;
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.2),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.check {
+  display: none;
+}
+
+.check:checked + .label {
+  color: red;
+}
+
+.number {
+  font-size: 1rem;
+  width: 2rem;
+}
+
+.createPopup {
+  display: flex;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.9s;
+}
+
+.invisible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.popupContent {
+  display: grid;
+  gap: 0.5rem;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  width: 600px;
+  max-width: 75vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.title-close {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showTitle {
+  width: 100%;
+  align-items: center;
+}
+
+#big-pic {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  padding: 0.2rem;
+  width: 250px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  height: 3vh;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+textarea {
+  margin-bottom: 20px;
+  height: 15vh;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+input:disabled {
+  background-color: #fff;
+}
+
+textarea,
+input:hover {
+  cursor: pointer;
+}
+
+.submitOpinion {
+  width: 100px;
+  height: 4vh;
+  font-size: 1rem;
+  margin: 0 auto 10px auto;
+  background-color: #2980b9;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: bold;
+}
+
+.closePopup {
+  width: 60px;
+  height: 4vh;
+  font-size: 20px;
+  background-color: #e00000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  border: 1px solid;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #f5f4ef;
+  border-top: 3px ridge #555;
+  border-radius: 50px 50px 0 0;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
   color: blue;
+}
+
+@media (max-width: 768px) {
+  main {
+    top: 79px;
+    bottom: 24px;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+  }
 }

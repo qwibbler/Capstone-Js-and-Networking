@@ -1,3 +1,4 @@
 import './style.css';
+import displayShows from './displayShows.js';
 
-const url = 'https://api.tvmaze.com/';
+displayShows();

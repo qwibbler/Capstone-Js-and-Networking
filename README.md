@@ -1,43 +1,55 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# TV Shows Catalogue
 
-> One paragraph statement about the project.
+> This website shows a catalogue of all available TV shows, with the option to like your favorite shows or share your comments about them.
 
-![screenshot](./app_screenshot.png)
+> ![screenshot](./src/images/Screenshot.png)
+> ![screenshot](./src/images/screenshot-comments.png)
+> |                                                    |                                                        |
+> | :------------------------------------------------: | :----------------------------------------------------: |
+> | ![screenshot](./src/images/screenshot-mobile.png)  | ![screenshot](./src/images/screenshot-mobile-comment.png) |
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html, CSS, JavaScript
+- Webpack, Jest
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://qwibbler.github.io/Capstone-Js-and-Networking/)
+
+[Live Video Link](https://drive.google.com/file/d/1YUuIAVCwr5MvCYjSXA4e1ADtogvvTnsJ/view?usp=sharing)
+
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Node.js
+
 ### Setup
+
+1. Open the terminal and clone the project using `git clone https://github.com/qwibbler/Capstone-Js-and-Networking.git`
 
 ### Install
 
+1. `cd` into the project folder and run `npm install`
+2. Run the command `npm start`
+
 ### Usage
+
+1. Click on the heart to *Like* your favorite shows.
+2. Click on the comment button to see more information about the show and share your views.
 
 ### Run tests
 
-### Deployment
+1. Run the command `npm test`
 
 
 
@@ -49,11 +61,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@hmemaz](https://twitter.com/hmemaz)
 - LinkedIn: [Humaira Zaman](https://www.linkedin.com/in/hmemaz1994/)
 
-👤 **Author2**
+👤 **Ivan Gaona**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ivaan1992](https://github.com/ivaan1992)
+- Twitter: [@ivangaona92](https://twitter.com/ivangaona92)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ivan-linares-gaona/)
 
 ## 🤝 Contributing
 
@@ -67,9 +79,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This website uses information from the free [TV Maze API](https://www.tvmaze.com/api)
+- Inspired by Microverse's wireframe.
 
 ## 📝 License
 
