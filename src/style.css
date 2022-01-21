@@ -73,7 +73,7 @@ main ul li img {
 }
 
 li img:hover {
-  scale: 1.02;
+  transform: scale(1.02);
 }
 
 .title {
